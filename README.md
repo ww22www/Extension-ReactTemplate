@@ -1,5 +1,6 @@
 # Extension-ReactTemplate
-Template repository for SillyTavern extensions using React and Webpack.
+
+Template repository for SillyTavern extensions using React, Typescript and Vite.
 
 ## How to use
 

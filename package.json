@@ -2,37 +2,28 @@
   "name": "extension-template",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
   "scripts": {
-    "build": "webpack --mode production"
+    "dev": "tsc -b && vite build --watch",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "format": "prettier . --write"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@babel/preset-env": "^7.24.0",
-    "@babel/preset-react": "^7.23.3",
-    "babel-loader": "^9.1.3",
-    "eslint-config-react-app": "^7.0.1",
-    "terser-webpack-plugin": "^5.3.10",
-    "webpack-cli": "^5.1.4"
+    "@eslint/js": "^9.39.2",
+    "@types/node": "^25.2.3",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.4",
+    "eslint": "^9.39.2",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^17.3.0",
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.0",
+    "vite": "^7.3.1"
   }
 }
